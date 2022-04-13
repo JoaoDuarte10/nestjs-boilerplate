@@ -1,5 +1,5 @@
 export default {
-  collectCoverage: true,
+  collectCoverage: false,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
     '!./src/**/index.ts',
