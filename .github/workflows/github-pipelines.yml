@@ -1,0 +1,15 @@
+name: Pipeline
+
+on: 
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  
+jobs:
+  Validate Lint:
+    steps:
+      - run: npm run lint
+  Running Tests:
+    steps:
+      - run: npm run test
