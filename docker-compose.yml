@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: name
+    restart: always
+    ports: 
+      - $PORT:$PORT
+    volumes:
+      - .:/home/$USER/app
+    command: 
+      - npm run start:dev
